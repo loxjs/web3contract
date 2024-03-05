@@ -1,0 +1,62 @@
+{
+  "name": "@loxjs/web3contract",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Zen Li",
+  "license": "MIT",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint src",
+    "build": "./node_modules/.bin/babel src -d lib && cp package.json lib"
+  },
+  "dependencies": {
+    "https-proxy-agent": "7.0.4",
+    "is-bigint": "1.0.4",
+    "mathjs": "11.9.1",
+    "sleep-promise": "9.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.23.9",
+    "@babel/core": "7.24.0",
+    "@babel/plugin-proposal-class-properties": "7.18.6",
+    "@babel/plugin-proposal-decorators": "7.24.0",
+    "@babel/plugin-proposal-do-expressions": "7.23.3",
+    "@babel/plugin-proposal-export-default-from": "7.23.3",
+    "@babel/plugin-proposal-export-namespace-from": "7.18.9",
+    "@babel/plugin-proposal-function-bind": "7.23.3",
+    "@babel/plugin-proposal-function-sent": "7.23.3",
+    "@babel/plugin-proposal-logical-assignment-operators": "7.20.7",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "7.18.6",
+    "@babel/plugin-proposal-numeric-separator": "7.18.6",
+    "@babel/plugin-proposal-object-rest-spread": "7.20.7",
+    "@babel/plugin-proposal-optional-chaining": "7.21.0",
+    "@babel/plugin-proposal-partial-application": "7.23.3",
+    "@babel/plugin-proposal-private-methods": "7.18.6",
+    "@babel/plugin-proposal-throw-expressions": "7.23.3",
+    "@babel/plugin-syntax-bigint": "7.8.3",
+    "@babel/preset-env": "7.24.0",
+    "@loxjs/lox": "^2.3.0",
+    "@loxjs/web3networks": "^1.0.0",
+    "babel-eslint": "10.1.0",
+    "babel-preset-minify": "0.5.2",
+    "debug": "4.3.4",
+    "eslint": "7.23.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-plugin-html": "6.1.2",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-security": "1.4.0",
+    "ethers": "6.11.1",
+    "husky": "6.0.0",
+    "lodash": "4.17.21",
+    "viem": "2.7.19",
+    "web3": "4.5.0"
+  },
+  "peerDependencies": {
+    "@loxjs/lox": ">=2.3.0",
+    "@loxjs/web3networks": ">=1.0.0",
+    "debug": ">=4.3.0",
+    "ethers": ">=6.8.0",
+    "lodash": ">=4.16.0",
+    "viem": ">=2.7.0",
+    "web3": ">=4.2.0"
+  }
+}
